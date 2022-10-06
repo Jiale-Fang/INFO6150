@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div id="root">
+        <header class="header">     
+            <img class="header-logo" src="https://placekitten.com/80/80?image=2" alt="this is a header logo">
+            <h1 class="header-title">Basic Form Header</h1> 
+          </header>
+
+        <main class="main">
+            <div class="my-form">
+                <form action="/submit" method="POST">
+                    <label class="item">
+                        <span>Name:</span>
+                        <input class="name" type="text" name="name" required/>
+                    </label>
+                    <label class="item">
+                        <span>Email:</span>
+                        <input class="email" type="email" name="email" pattern=".+@.*\.com" placeholder="sophie@example.com" required/>
+                    </label>
+                    <label class="item">
+                        <span>Tier:</span>
+                        <select class="tier" name="tier" required>
+                            <option value="">Please select</option>
+                            <option value="1">Silver Tier</option>
+                            <option value="2">Gold Tier</option>
+                            <option value="3">Platinum Tier</option>
+                        </select>
+                    </label>
+                    <label class="item">
+                        <span>Do you want us to send you annoying emails?</span>
+                        <input class="checkbox" type="checkbox" name="annoy_me" checked/>
+                    </label>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
