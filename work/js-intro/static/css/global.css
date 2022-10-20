@@ -69,7 +69,7 @@ html, body {
       opacity: 0;
     }
     to{
-      height: 8.5rem;
+      height: 2.5rem;
       opacity: 1;
     }
   }
@@ -94,11 +94,15 @@ html, body {
 }
 
 .dropdown-content a:hover {
-    background-color: paleturquoise
+    background-color: #007184;
 }
 
 .dropdown.active .dropdown-content {
     display: block;
+}
+
+.dropdown.active {
+    background-color: gray;
 }
 
 /* .dropdown:hover .dropdown-content {
