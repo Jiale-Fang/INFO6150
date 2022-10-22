@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="static/css/global.css"/>
+    <link rel="stylesheet" href="static/css/register.css"/>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <a href="index.html"><img class="header-logo" src="static/images/logo.jpeg" alt="this is a turtle logo"></a>     
+            <h1 class="header-title">Turtles on the Internet</h1> 
+          </header>
+          <nav class="global-menu">
+            <ul class="menu">
+                <h2 class="nav-title">Register</h2>
+                <li class="dropdown">               
+                    <a href="index.html" class="drop-btn">Homepage</a>
+                    <div class="dropdown-content">
+                      <a href="#">Images of turtles</a>
+                      <a href="#">Intro of turtles</a>
+                      <a href="#">Classification of turtles </a>
+                    </div>
+                </li>
+                <li class="dropdown">               
+                  <a href="register.html" class="drop-btn">Register</a>
+                  <div class="dropdown-content">
+                    <a href="#">Sign in</a>
+                    <a href="#">Sign out</a>
+                  </div>
+              </li>
+                <li class="menu-item"><a href="about.html">About Turtles</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <div class="my-form">
+                <form action="/register" method="POST">
+                    <label class="item">
+                        <span>Name:</span>
+                        <input class="name" type="text" name="name" required/>
+                    </label>
+                    <label class="item">
+                        <span>Email:</span>
+                        <input class="email" type="email" name="email" pattern=".+@.*\.edu" placeholder="sophie@example.com" required/>
+                    </label>
+                    <label class="item">
+                        <span>Tier:</span>
+                        <select class="tier" name="tier" required>
+                            <option value="">Please select</option>
+                            <option value="1">Silver Tier</option>
+                            <option value="2">Gold Tier</option>
+                            <option value="3">Platinum Tier</option>
+                        </select>
+                    </label>
+                    <label class="item">
+                        <span>Do you want us to send you annoying emails?</span>
+                        <input class="checkbox" type="checkbox" name="annoy_me" checked/>
+                    </label>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>

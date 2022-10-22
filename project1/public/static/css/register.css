@@ -1,0 +1,90 @@
+span {
+    font-weight: bold;
+}
+
+.main {
+    grid-area: main;
+}
+
+.my-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 1rem 0.5em 0 1rem;
+}
+
+.item {
+    grid-column: span 6;
+    padding-bottom: 1rem;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input {
+    height: 1.5rem;
+    width: 60%;
+    border-radius: 5px;
+}
+
+select {
+    height: 1.5rem;
+    width: 50%;
+    border-radius: 5px;
+}
+
+button{
+    grid-column:  5 / 8;
+    border: 0;
+    height: 2rem;
+    color: white;
+    background: green;
+    border-radius: 8px;
+}
+
+button:active{
+    background: black;
+}
+
+@media screen and (max-width: 40rem){
+    .my-form{
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .item {
+        grid-column: span 12;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+    
+}
