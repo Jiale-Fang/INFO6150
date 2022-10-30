@@ -1,0 +1,79 @@
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+}
+
+.main div {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+
+    margin: 0.6rem 1rem;
+}
+
+.card1 {
+    background-color: #32B0E6;
+}
+
+.card2 {
+    background-color: #2CC068;
+}
+
+.card3 {
+    background-color: #BB6D41;
+}
+
+.card-pic {
+    aspect-ratio: 1/1;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.card-heading {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+.card-cta {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border: 1px solid green;
+    border-radius: 0.5rem;
+
+    background-color: green;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-text {
+    margin: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 40rem){
+
+    .main div {
+        grid-column: span 12;
+    }
+
+    .main div:hover {
+        box-shadow: 2px 2px 5px 5px grey;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card-pic {
+        aspect-ratio: 1/1;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+}
