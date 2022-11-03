@@ -66,19 +66,18 @@ Wed Oct 12, 11:59pm ET
 Thu Oct 13, 
 Thu Oct 20,
 Thu Oct 27,
+Thu Nov 3, 
 
 - Browser JS Intro
 - Validation
-- Services and Async responses
 - Interactive UI Components
 
 #### Project Due: Javascript
 
-Wed Nov 2, 11:59pm ET (Due Date may change!)
+Wed Nov 9, 11:59pm
 
 ### Section 3: React Intro
 
-Thu Nov 3, 
 Thu Nov 10,
 Thu Nov 17, 
 NOT Thu Nov 24 (Holiday)
