@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js-form</title>
+    <link rel="stylesheet" href="static/css/global.css"/>
+    <link rel="stylesheet" href="static/css/register.css"/>
+    <script defer src="static/js/register.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <a href="index.html"><img class="header-logo" src="static/images/logo.jpeg" alt="this is a turtle logo"></a>     
+            <h1 class="header-title">Turtles on the Internet</h1> 
+          </header>
+        <main class="main">
+            <div class="register">
+                <form action="/register" method="POST">
+                    <div class="register-name">
+                        <span class="register-name__error">Name field is required</span>
+                        <label for="name"></label>
+                        <span class="register__span">Name:</span>
+                        <input class="register-name__input" name="name" id="name" />
+                    </div>
+
+                    <div class="register-email">
+                        <span class="register-email__error"></span>
+                        <label for="email"></label>
+                        <span class="register__span">Email:</span>
+                        <input class="register-email__input" name="email" placeholder="sophie@example.com" id="email" />
+                    </div>
+
+                    <div class="register-confirm">
+                        <span class="register-confirm__error"></span>
+                        <label for="confirm"></label>
+                        <span class="register__span">Confirm Email:</span>
+                        <input class="register-confirm__input" name="confirm" placeholder="Please reenter your email" id="confirm" />
+                    </div>
+
+                    <div class="register-tier">
+                        <span class="register-tier__error"></span>
+                        <label for="tier"></label>
+                        <span class="register__span">Tier:</span>
+                        <select class="register-tier__select" name="tier">
+                                <option value="0">Please select</option>
+                                <option value="1">Silver Tier</option>
+                                <option value="2">Gold Tier</option>
+                                <option value="3">Platinum Tier</option>
+                        </select>
+                    </div>
+                    
+                    <div class="register-checkbox">
+                        <label for="annoy_me"></label>
+                        <span class="register__span">Wants-spam?</span>
+                        <input class="register-checkbox__input" type="checkbox" name="annoy_me" checked/>
+                    </div>
+                    <div class="register-button">
+                        <button type="submit" class="regiter__submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
