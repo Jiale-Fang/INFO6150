@@ -1,0 +1,135 @@
+span {
+    font-weight: bold;
+}
+
+.main {
+    grid-area: main;
+}
+
+.register{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 45%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    margin: 1rem 0.5em 0 1rem;
+}
+
+form > div {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 1rem 0.5em 0 1rem;
+}
+
+.register__span {
+    grid-column: 1 / 4;
+    /* padding-bottom: 1rem; */
+}
+
+.register-name__error,
+.register-email__error,
+.register-confirm__error,
+.register-tier__error {
+    grid-column: 4 / 12;
+}
+
+form > div > label {
+    grid-column: 0 / 1;
+}
+
+form > div > input {
+    grid-column: 4 / 12;
+}
+
+form > div > select {
+    grid-column: 4 / 12;
+}
+
+.register-name__error {
+    display: none;
+    color: red;
+}
+
+.register-email__error, 
+.register-confirm__error,
+.register-tier__error {
+    color: red;
+}
+
+.register-name--invalid .register-name__error {
+    display: initial;
+}
+
+input {
+    height: 1.5rem;
+    width: 70%;
+    border-radius: 5px;
+}
+
+select {
+    height: 1.5rem;
+    width: 50%;
+    border-radius: 5px;
+}
+
+button{
+    grid-column:  5 / 8;
+    border: 0;
+    height: 2rem;
+    color: white;
+    background: green;
+    border-radius: 8px;
+}
+
+button:active{
+    background: black;
+}
+
+@media screen and (max-width: 40rem){
+    .register{
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    form > div > input {
+        grid-column: span 12;
+    }
+
+    .register-checkbox__input {
+        grid-column: 8;
+    }
+
+    .register-name__error,
+    .register-email__error,
+    .register-confirm__error,
+    .register-tier__error {
+    grid-column: 4 / 12;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+    
+}
