@@ -1,0 +1,69 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"
+}
+
+html, body {
+    height: 100%;
+    background-color: #F7FAFA;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #007185;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header-logo {
+    grid-column: span;
+    aspect-ratio: 1/1;
+    width: 80%;
+    vertical-align: bottom;
+    animation: spin 1s linear;   
+}
+
+.header-title {
+    grid-column: span 11;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+} 
+
+@keyframes move{
+    0%{
+        height: 0rem;
+    }
+    100%{
+        height: 6rem;
+    }
+}
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #007185;
+    position: relative;
+}
