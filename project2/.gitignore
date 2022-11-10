@@ -1,0 +1,13 @@
+# ignored files for the samples directory
+
+# This is created by Mac OSX Finder
+.DS_Store
+
+# Always keep these out of commits
+node_modules/
+**/*.map
+
+# Skipping because samples aren't project code
+package-lock.json
+
+bundle.js
