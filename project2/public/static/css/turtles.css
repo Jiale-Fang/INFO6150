@@ -1,0 +1,140 @@
+  
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+}
+
+.card {
+    grid-column: span 12;
+    background-color: #eee;
+    border-radius: 1rem;
+    margin: 0.25rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.main div:hover {
+    box-shadow: 2px 2px 5px 5px grey;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-pic {
+    aspect-ratio: 1/1;
+    width: 125px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.card-heading {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+.card-text {
+    margin: 0.5rem 2rem;
+}
+
+.card-btn {
+    color: blue;
+    background-color: initial;
+    border: 0px none;
+    cursor: pointer;
+    text-decoration:underline; 
+    font-size: 1rem;
+}
+
+.modal::backdrop {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.modal {
+    width: 40%;
+    background-color: #eee;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+form {
+    margin: 1rem 0.5em 0 1rem;
+}
+
+form > div {
+    margin: 1rem 0.5em 0 1rem;
+}
+
+.modal-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-text__italic {
+    font-style: italic;    
+}
+
+.subscribe-email__error, 
+.subscribe-confirm__error {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input {
+    height: 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.subscribe-email__input.error, .subscribe-confirm__input.error {
+    border: 2px solid red;
+}
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe__submit {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid lime;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: lime;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subscribe__close {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid lightcoral;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 44rem){
+    
+    .card {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        margin: 0.25rem;
+    }
+    
+}
