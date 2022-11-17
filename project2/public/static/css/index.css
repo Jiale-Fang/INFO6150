@@ -1,0 +1,91 @@
+.main {
+    grid-area: main;
+    gap: 0.5rem;
+}
+
+.main div:hover {
+    box-shadow: 2px 2px 5px 5px grey;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    margin: 0.5rem;
+}
+
+.card-left, .card-right {
+    background-color: #eee;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.card-pic__right {
+    float: right;
+    aspect-ratio: 1/1;
+    width: 125px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.card-pic__left {
+    float: left;
+    aspect-ratio: 1/1;
+    width: 125px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 44rem){
+    
+    .card-left {
+        grid-row: span 6;
+        display: grid;
+        grid-template-areas: "left-pic title"
+                            "left-pic content";
+        grid-template-columns: 0.3fr 1fr;
+        border-radius: 1rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        text-align: center;
+        background-color: #eee;
+    }
+
+    .card-right {
+        grid-row: span 6;
+        display: grid;
+        grid-template-areas: "title right-pic"
+                            "content right-pic";
+        grid-template-columns: 1fr 0.3fr;
+        border-radius: 1rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        text-align: center;
+        background-color: #eee;
+    }
+    
+    .card-title {
+        grid-area: title;
+        text-align: center;
+    }
+    
+    .card-text {
+        grid-area: content;
+    }
+    
+    .card-pic__right {
+        grid-area: right-pic;
+        aspect-ratio: 1/1;
+        width: 90%;
+        height: auto;
+    }
+    
+    .card-pic__left {
+        grid-area: left-pic;
+        aspect-ratio: 1/1;
+        width: 90%;
+        height: auto;
+    }
+    
+}
