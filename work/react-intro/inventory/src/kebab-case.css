@@ -1,0 +1,26 @@
+.app {
+  background-color: aqua;
+  font-size: 1.5rem;
+}
+
+.reorder-container {
+  display: inline-block;
+}
+
+.reorder {
+  animation: fade-in 5s;
+}
+
+button {
+  margin: 1rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
