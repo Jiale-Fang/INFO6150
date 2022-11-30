@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        "header-logo header-title"
+        "header-nav header-nav"
+    ;
+    grid-template-columns: auto 1fr;
+    background-color: #007185;
+}
+
+.header__logo {
+    grid-area: header-logo;
+    aspect-ratio: 1/1;
+    width: 100px;
+    vertical-align: bottom;
+    animation: spin 1s linear;   
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header__title {
+    grid-area: header-title;
+    text-align: center;
+}
+
+.header__nav {
+    grid-area: header-nav;
+    background-color: skyblue;
+}
