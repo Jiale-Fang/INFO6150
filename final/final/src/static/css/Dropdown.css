@@ -1,0 +1,19 @@
+.subscribe-gender {
+    margin: 1rem 0.5em 0 1rem;
+}
+
+.multy-select-dropdown-hobby,
+.multy-select-dropdown-specify-type,
+.other-option {
+    margin-top: 1rem;
+}
+
+input {
+    height: 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+select {
+    width: 100%;
+}

@@ -1,0 +1,84 @@
+
+.modal::backdrop {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.modal {
+    width: 40%;
+    background-color: #eee;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+form {
+    margin: 1rem 0.5em 0 1rem;
+}
+
+form > div {
+    margin: 1rem 0.5em 0 1rem;
+}
+
+.modal-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-text-italic {
+    font-style: italic;    
+}
+
+.subscribe-email-error, 
+.subscribe-confirm-error,
+.subscribe-username-error {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input {
+    height: 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.subscribe-email-input.error, 
+.subscribe-confirm-input.error,
+.subscribe-username-input.error {
+    border: 2px solid red;
+}
+
+.login-button,
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+}
+
+.open-login-form,
+.subscribe-submit {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid lime;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: lime;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.close-confirm-login,
+.subscribe-close {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid lightcoral;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+}
