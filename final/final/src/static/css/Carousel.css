@@ -1,0 +1,44 @@
+.carousel {
+    display: flex;
+    justify-content: center; 
+    margin: 1rem;
+  }
+
+  .carousel-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel img {
+    width: 70%;
+    object-fit: cover;
+    transition: all 5s;
+  }
+  
+  .carousel button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .carousel button:hover {
+    color: blue;
+  }
+  
+  .carousel button.prev {
+    left: 10px;
+  }
+  
+  .carousel button.next {
+    right: 10px;
+  }
+  
+  @media screen and (max-width: 44rem) {
+    .carousel {
+      display: initial;
+    }
+  }

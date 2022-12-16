@@ -1,0 +1,24 @@
+.theme {
+    z-index: 4;
+    position: fixed;
+    /* right: -38px; */
+    right: 10px;
+    bottom: 100px;
+    transition: all 0.5s;
+  }
+
+.theme-icon {
+  /* display: block; */
+  /* margin-bottom: 2px; */
+  /* width: 30px;
+  height: 30px; */
+  /* background-color: #49b1f5; */
+  /* color: black; */
+  /* text-align: center; */
+  font-size: 32px;
+  /* line-height: 30px; */
+  cursor: pointer;
+}
+.theme-icon:hover {
+  background-color: #ff7242;
+}

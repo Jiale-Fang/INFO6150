@@ -1,0 +1,69 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        "header-logo header-title header-user"
+        "header-nav header-nav header-nav"
+    ;
+    grid-template-columns: auto 1fr auto;
+    background-color: #0E0B16;
+}
+
+.header-logo {
+    grid-area: header-logo;
+    aspect-ratio: 1/1;
+    width: 100px;
+    vertical-align: bottom;
+    animation: spin 1s linear;   
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header-title {
+    grid-area: header-title;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-nav {
+    grid-area: header-nav;
+    background-color: #1D2731;
+}
+
+.header-user {
+    grid-area: header-user;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 1rem;
+}
+
+.header-user-avatar {
+    aspect-ratio: 1/1;
+    width: 50px;
+    border-radius: 50PX;
+}
+
+.header-login {
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.header-login-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #8ab4f8;
+    border: 1px solid transparent;
+}

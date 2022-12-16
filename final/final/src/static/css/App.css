@@ -1,0 +1,22 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  width: 100%;
+}
+
+.skip-link {
+  position: absolute;
+  top: 10px;
+  margin-left: 7px;
+  left: -100%;
+  padding: 7px 8px 7px 8px;
+  background-color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+  z-index: 11;
+}
+
+.skip-link:focus {
+  left: 50%;
+}

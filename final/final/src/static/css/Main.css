@@ -1,0 +1,11 @@
+.main {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    background-color: floralwhite;
+}
+
+.main.dark {
+    background-color: #121212;
+    color: rgba(255,255,255,0.8) ;
+    transition: all 1s;
+  }

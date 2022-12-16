@@ -1,0 +1,16 @@
+/* Adapted from https://unsplash.com/ under its License
+https://unsplash.com/license */
+
+Logo: https://images.unsplash.com/photo-1499750310107-5fef28a66643
+cover1: https://images.unsplash.com/photo-1439405326854-014607f694d7
+avatar1: https://images.unsplash.com/photo-1548778052-311f4bc2b502
+avatar2: https://images.unsplash.com/photo-1608178398319-48f814d0750c
+avatar3: https://images.unsplash.com/photo-1627796795540-18e2db6d3908
+react: https://images.unsplash.com/photo-1633356122544-f134324a6cee
+algorithm: https://images.unsplash.com/photo-1531297484001-80022131f5a1
+landscape2: https://images.unsplash.com/photo-1506744038136-46273834b3fb
+landscape3: https://images.unsplash.com/photo-1670611554834-d7e6e48b7bc6
+landscape4: https://images.unsplash.com/photo-1616036740257-9449ea1f6605
+landscape5: https://images.unsplash.com/photo-1627174003373-1892aff35f9d
+
+Tips: I have the right of other images

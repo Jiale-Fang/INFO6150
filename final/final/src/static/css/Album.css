@@ -1,0 +1,42 @@
+.album {
+    grid-area: main;
+    margin: 1rem 3rem;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5rem;
+    /* display: grid;
+    grid-template-columns: repeat(24, 1fr); */
+}
+
+.album.dark {
+    background-color: #272829;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 1s;
+}
+
+.album-title {
+    font-size: 2.5rem;
+    color: #007185;
+    margin: 20px 0 8px;
+    text-align: center;
+    /* width: 100%; */
+  }
+
+.album-container {
+    display: flex;
+    justify-content: center;
+}
+
+.album-container-img {
+    width: 40%;
+    margin: 0.25rem;
+}
+
+  @media screen and (max-width: 44rem) {
+    .album {
+        border-radius: 0%;
+        margin: 0.25rem;
+    }
+  }
