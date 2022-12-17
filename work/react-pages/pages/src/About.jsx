@@ -1,4 +1,4 @@
-import './static/css/About.css'
+import '../static/css/About.css'
 function About() {
     return (
         <div className="about">
